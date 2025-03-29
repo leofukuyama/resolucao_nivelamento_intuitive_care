@@ -7,17 +7,17 @@ Este é um projeto de solução do *Teste de Nivelamento* para a vaga de Estági
 ## ✨ Features  
 
 ✅ **Teste de Web Scraping**
-   - O código, realizado em Python 3.13, realiza a raspagem de dados com a biblioteca *requests* na página fornecida, filtra os dados HTML da página com *BeautifulSoup*, organiza os arquivos baixados na extensão .zip *ZipFile* e acessa os arquivos via *os*.
+   - O código, realizado em Python 3.13, faz a raspagem de dados com a biblioteca *requests* na página fornecida, filtra os dados HTML da página com *BeautifulSoup*, organiza os arquivos baixados na extensão .zip *ZipFile* e acessa os arquivos via *os*.
 
 ✅ **Teste de Transformação de Dados**
-   - O código, realizado em Python 3.13, realiza a transformação de dados com a biblioteca *tabula-py* no arquivo .pdf AnexoI, filtra os dados, realiza devidos ajustes da tabela e exporta o dataframe na extensão .csv com *pandas*, organiza os arquivos baixados na extensão .zip *ZipFile* e acessa os arquivos via *os*.
+   - O código, realizado em Python 3.13, faz a transformação de dados com a biblioteca *tabula-py* no arquivo .pdf AnexoI, filtra os dados, realiza devidos ajustes da tabela e exporta o dataframe na extensão .csv com *pandas*, organiza o arquivo .csv na extensão .zip *ZipFile* e acessa os arquivos via *os*.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas  
 
 - **Linguagem:** `Python 3.13`
-- **Bibliotecas** `requests`, `BeautifulSoup`, `os`, `ZipFile`, `tabula-py` e `pandas`
+- **Bibliotecas:** `requests`, `BeautifulSoup`, `os`, `ZipFile`, `tabula-py` e `pandas`
 
 ---
 
