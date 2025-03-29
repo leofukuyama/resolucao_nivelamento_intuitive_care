@@ -31,5 +31,5 @@ Antes de começar, certifique-se de ter instalado e configurado:
 
 Clone o repositório e entre na pasta do projeto:  
 ```bash
-git clone https://github.com/seu-usuario/resolucao_nivelamento_intuitive_care.git
+git clone https://github.com/leofukuyama/resolucao_nivelamento_intuitive_care
 cd resolucao_nivelamento_intuitive_care
