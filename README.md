@@ -12,11 +12,14 @@ Este é um projeto de solução do *Teste de Nivelamento* para a vaga de Estági
 ✅ **Teste de Transformação de Dados**
    - O código, realizado em Python 3.13, faz a transformação de dados com a biblioteca *tabula-py* no arquivo .pdf AnexoI, filtra os dados, realiza devidos ajustes da tabela e exporta o dataframe na extensão .csv com *pandas*, organiza o arquivo .csv na extensão .zip *ZipFile* e acessa os arquivos via *os*.
 
+✅ **Teste de Banco de Dados**
+   - O código, realizado em MySQL, faz a criação da database, tabela e importação dos dados dos aquivos .csv. Além disso oferece o resultado do top 10 exatamente para a query solicitada.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas  
 
-- **Linguagem:** `Python 3.13`
+- **Linguagem:** `Python 3.13` e `MySQL 8+`
 - **Bibliotecas:** `requests`, `BeautifulSoup`, `os`, `ZipFile`, `tabula-py` e `pandas`
 
 ---
@@ -27,6 +30,7 @@ Este é um projeto de solução do *Teste de Nivelamento* para a vaga de Estági
 Antes de começar, certifique-se de ter instalado e configurado:  
 - Python 3.13
 - Java JDK 24
+- MySQL 8+
 - *requests* via `pip install requests`
 - *BeautifulSoup* via `pip install beautifulsoup4`
 - *tabula-py* via `pip install tabula-py`
