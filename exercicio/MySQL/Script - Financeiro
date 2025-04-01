@@ -1,0 +1,166 @@
+CREATE DATABASE relatorios_financeiros;
+
+USE relatorios_financeiros;
+
+SET lc_numeric_decimal_point = ',';
+
+
+CREATE TABLE dados_financeiros (
+    DATA DATE NOT NULL,
+    REG_ANS INT NOT NULL,
+    CD_CONTA_CONTABIL INT NOT NULL,
+    DESCRICAO VARCHAR(255) NOT NULL,
+    VL_SALDO_INICIAL DECIMAL(15,2) NOT NULL,
+    VL_SALDO_FINAL DECIMAL(15,2) NOT NULL
+);
+    
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2023\\1T2023.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2023\\2t2023.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2023\\3T2023.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2023\\4T2023.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2024\\1T2024.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2024\\2T2024.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+    
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2024\\3T2024.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+    
+LOAD DATA LOCAL INFILE 'C:\\DockerContainers\\demonstracoes_contabeis\\2024\\4T2024.csv'
+INTO TABLE dados_financeiros
+CHARACTER SET utf8mb4
+FIELDS TERMINATED BY ';'
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(@DATA, @REG_ANS, @CD_CONTA_CONTABIL, @DESCRICAO, @VL_SALDO_INICIAL, @VL_SALDO_FINAL)
+SET 
+    DATA = STR_TO_DATE(@DATA, '%Y-%m-%d'),
+    REG_ANS = CAST(@REG_ANS AS UNSIGNED),
+    CD_CONTA_CONTABIL = CAST(@CD_CONTA_CONTABIL AS UNSIGNED),
+    DESCRICAO = @DESCRICAO,
+    vl_saldo_inicial = REPLACE(@vl_saldo_inicial, ',', '.'),
+    vl_saldo_final = REPLACE(@vl_saldo_final, ',', '.');
+    
+SELECT 
+    REG_ANS, 
+    SUM(VL_SALDO_FINAL) AS Total_Despesas
+FROM dados_ativos
+WHERE DESCRICAO = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA A SAÚDE MÉDICO-HOSPITALAR'
+AND DATA >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH)
+GROUP BY REG_ANS
+ORDER BY Total_Despesas DESC
+LIMIT 10;
+
+SELECT 
+    REG_ANS, 
+    SUM(VL_SALDO_FINAL) AS Total_Despesas
+FROM dados_financeiros
+WHERE DESCRICAO = 'EVENTOS/SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA A SAÚDE MÉDICO-HOSPITALAR'
+AND DATA >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+GROUP BY REG_ANS
+ORDER BY Total_Despesas DESC
+LIMIT 10;
+
+
