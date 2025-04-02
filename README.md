@@ -16,8 +16,7 @@ Este é um projeto de solução do *Teste de Nivelamento* para a vaga de Estági
    - O código, realizado em MySQL, faz a criação da database, tabela e importação dos dados dos aquivos .csv. Além disso oferece o resultado do top 10 exatamente para a query solicitada.
 
 ✅ **Teste de API**
-   - O código, realizado em Python 3.13, faz a requisição HTTP GET com base no nome_fantasia da empresa. Além disso, foi criado uma aplicação Web em Vue.js para exibir todos os resultados da pesquisa.
-![Tela busca Unimed.png](images/Tela%20busca%20Unimed.png)![Tela busca Amazil.png](images/Tela%20busca%20Amazil.png)
+   - O código, realizado em Python 3.13, faz a requisição HTTP GET com base no nome_fantasia da empresa. Além disso, foi criado uma aplicação Web em Vue.js para exibir todos os resultados da pesquisa. ![Tela busca Unimed.png](images/Tela%20busca%20Unimed.png)
 ---
 
 ## 🛠️ Tecnologias Utilizadas  
