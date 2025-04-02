@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e915ddd5-0ab9-4de3-b9e7-a185a171e046",
+		"name": "API Intuitive Care",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42874064"
+	},
+	"item": [
+		{
+			"name": "GET Unimed",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar/?termo=Unimed",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar",
+						""
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "Unimed"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Amazil",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar/?termo=Amazil",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar",
+						""
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "Amazil"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
